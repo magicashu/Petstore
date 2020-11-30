@@ -1,0 +1,9 @@
+
+photo -
+age 1 month
+gender male
+whatsapp/phone 6545465460 
+breedname husky
+price 200
+decription lojflksd;fksdjpsd
+type dog/cat

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/lib/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" src="{{url_for('static',filename='css/untitled.css')}}">
+    <link rel="stylesheet" src="{{url_for('static',filename='css/dogs.css')}}">
+
+        <!-- Font Icon -->
+        <link rel="stylesheet" src="{{url_for('static',filename='fonts/material-icon/css/material-design-iconic-font.min.css')}} ">
+
+        <!-- Main css -->
+        <link rel="stylesheet" src="{{url_for('static', filename='css/signup-style.css')}}">
+</head>
+
+<body>
+    <nav
+      class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2FLOGO.jpg?v=1604399170653"
+            alt=""
+          />
+        </a>
+        <button
+          data-toggle="collapse"
+          class="navbar-toggler navbar-toggler-right"
+          data-target="#navbarResponsive"
+          type="button"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          value="Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item nav-link js-scroll-trigger">
+              <a class="nav-link active js-scroll-trigger" href="#about"
+                >Categories</a
+              >
+            </li>
+            <li class="nav-item nav-link js-scroll-trigger">
+              <a class="nav-link js-scroll-trigger" href="#download"
+                >Food for Categories</a
+              >
+            </li>
+            <li class="nav-item nav-link js-scroll-trigger">
+              <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="masthead" 
+      style="background-image:url({{url_for('static',filename='img/')}});"
+    >
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Ashu's PETSTORE</h1>
+              <p class="intro-text">Dogs Cats and ashu for both</p>
+              <a class="btn btn-link btn-circle" role="button" href="#about"
+                ><i class="fa fa-angle-double-down animated"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <h1>
+      <a href="form.html">Click here to view the form gandhi ma boi</a>
+    </h1>
+
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Categories</h2>
+            <div class="row photos">
+              <div class="col-sm-6 col-md-4 col-lg-3 item">
+                <a
+                  data-lightbox="photos"
+                  href="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2Fdownload.jpg?v=1604397528662"
+                >
+                  <img
+                    class="img-fluid"
+                    src="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2Fdownload.jpg?v=1604397528662"
+                  />
+                </a>
+                <a href="{{url_for('dogs')}}">
+                  <h1>Click here to see Dogs</h1>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 item">
+                <a
+                  data-lightbox="photos"
+                  href="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2Fdownload.jpg?v=1604397528662"
+                >
+                  <img
+                    class="img-fluid"
+                    src="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2Fdownload.jpg?v=1604397528662"
+                  />
+                </a>
+                <a href="{{url_for('cats')}}">
+                  <h1>Click here to see Cats</h1>
+                </a>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-3 item">
+                <a
+                  data-lightbox="photos"
+                  href="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2Fdownload.jpg?v=1604397528662"
+                >
+                  <img
+                    class="img-fluid"
+                    src="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2Fdownload.jpg?v=1604397528662"
+                  />
+                </a>
+                <a href="{{url_for('static',filename='templates/fishes.html')}} ">
+                  <h1>Click here to see Fishes</h1>
+                </a>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 item">
+                <a
+                  data-lightbox="photos"
+                  href="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2Fdownload.jpg?v=1604397528662"
+                >
+                  <img
+                    class="img-fluid"
+                    src="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2Fdownload.jpg?v=1604397528662"
+                  />
+                </a>
+                <a href="birds.html">
+                  <h1>Click here to see Birds</h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="download"
+      class="download-section content-section text-center"
+      style="background-image:url('assets/img/downloads-bg.jpg');"
+    >
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h1>Pet Accessories</h1>
+          <p>We provide all types of Accessories</p>
+
+          <div class="row justify-content-center features">
+            <div class="col-sm-6 col-md-5 col-lg-4 item">
+              <div class="box">
+                <img
+                  class="img-fluid"
+                  src="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2Fdownload%20(1).jpg?v=1604397772791"
+                />
+                <h3 class="name">Works everywhere</h3>
+                <a href="accessories.html">Click Here</a>
+                <p class="description">
+                  Aenean tortor est, vulputate quis leo in, vehicula rhoncus
+                  lacus. Praesent aliquam in tellus eu.
+                </p>
+                <a class="learn-more" href="#">Learn more »</a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-5 col-lg-4 item">
+              <div class="box">
+                <img
+                  class="img-fluid"
+                  src="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2Fdownload%20(1).jpg?v=1604397772791"
+                />
+                <h3 class="name">Works everywhere</h3>
+                <a href="accessories.html">Click Here</a>
+                <p class="description">
+                  Aenean tortor est, vulputate quis leo in, vehicula rhoncus
+                  lacus. Praesent aliquam in tellus eu.
+                </p>
+                <a class="learn-more" href="#">Learn more »</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row people">
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <img class="rounded-circle" src="1.jpg" />
+              <h3 class="name">Ashutosh Jadhav</h3>
+              <p class="title">Musician</p>
+              <p class="description">HUM HAI ENGINEERS</p>
+              <div class="social">
+                <a href="https://www.facebook.com/ashutosh.jadhav.9231/"
+                  ><i class="fa fa-facebook-official"></i></a
+                ><a href="https://twitter.com/MagicAshu2"
+                  ><i class="fa fa-twitter"></i></a
+                ><a href="https://www.instagram.com/ashuu.jadhav/"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <img class="rounded-circle" src="2.jpg" />
+              <h3 class="name">Anand Gandhi</h3>
+              <p class="title">Artist</p>
+              <p class="description">HUM HAI ENGINEERS</p>
+              <div class="social">
+                <a href="https://www.facebook.com/anand.gandhi.750"
+                  ><i class="fa fa-facebook-official"></i></a
+                ><a href="#"><i class="fa fa-twitter"></i></a
+                ><a href="https://www.instagram.com/anand_gandhi_asg/"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <img class="rounded-circle" src="3.jpg" />
+              <h3 class="name">Adnan Shaikh</h3>
+              <p class="title">Stylist</p>
+              <p class="description">HUM HAI ENGINEERS</p>
+              <div class="social">
+                <a href="https://www.facebook.com/AdnanShaikh1313"
+                  ><i class="fa fa-facebook-official"></i></a
+                ><a href="#"><i class="fa fa-twitter"></i></a
+                ><a href="https://www.instagram.com/adnan_shaikh87/"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="map-clean container text-center">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.0738568129323!2d73.84422261484288!3d18.525564287406024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07e4111123b%3A0x3f92335c2e5c8400!2sP.E.S.%20Modern%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1604400588564!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+    <footer>
+      <div class="container text-center">
+        <p>Copyright ©&nbsp;ASHU KUTTE KA BAACHA</p>
+      </div>
+    </footer>
+    {% block content %}{% endblock %}   
+    <script src="{{url_for('static',filename='js/lib/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/lib/bootstrap.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{{url_for('static',filename='js/lib/grayscale.js')}}"></script>
+    <script src="{{url_for('static', filename='js/signup-main.js')}}"></script>
+</body>
+
+</html>

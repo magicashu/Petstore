@@ -1,0 +1,100 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/lib/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" src="{{url_for('static',filename='fonts/font-awesome.min.css')}} ">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/untitled.css')}}">
+    <link rel="stylesheet"  href="{{ url_for('static', filename='fonts/material-icon/css/material-design-iconic-font.min.css') }}">
+
+   
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg" id="mainNav">
+        <div class="container nav">
+          <a class="navbar-brand" href="layout.html">
+          <img src="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2FLOGO.jpg?v=1604399170653" alt="">
+        </a>
+          <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="#about">Categories</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#download">Food for Categories</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="masthead" >
+              </header>
+            <div class="container" style="padding: auto;" >
+                <div class="post-content" style=" padding: 10% 10% 10% 10%; background-color: aliceblue; border-radius: 8px; ">
+                    <div class="post-form" >
+                        <h2 class="form-title text-center " style="color: black;" >New Post</h2>
+                        <form method="POST" class="post-form" id="post-form" action="">
+                            
+                        </form>
+                        <form method="POST" class="post-form" id="post-form" action="">
+                            
+                            <div class="form-group">
+                                <label for="photu" style="color: black;">Select Image</label>
+                                <input type="file" style= "background: none; color: black;  width: 100%; "  name="photu" id="photu" placeholder="Your pets photu"/>
+                            </div>
+                            <div class="form-group" >
+                                <label for="type"></label>
+                                <input type="text" style=" background: none; border: 3px solid #555; width: 100%; border: none; border-bottom: 2px solid black;" name="type" id="type" placeholder="Enter what type of animal is it eg. dog,cat "/>
+                            </div>
+                            <div class="form-group">
+                                <label for="sex"></label>
+                                <input type="text" style="  background: none; border: 3px solid #555; width: 100%;  border: none; border-bottom: 2px solid black;" name="sex" id="sex" placeholder="Please enter the gender of your pet "/>
+                            </div>
+                            <div class="form-group">
+                                <label for="age"></label>
+                                <input type="number" style="   background: none; border: 3px solid #555; width: 100%;  border: none; border-bottom: 2px solid black;" name="age" id="age" placeholder="Your pets age"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="wa"></label>
+                                <input type="tel" style="  background: none; border: 3px solid #555; width: 100%;  border: none; border-bottom: 2px solid black;" name="wa" id="wa" placeholder="Enter your contact number"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="breed"></label>
+                                <input type="text" style="  background: none; border: 3px solid #555; width: 100%;  border: none; border-bottom: 2px solid black;" name="breed" id="breed" placeholder="Enter the breed of your pet"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="price"></label>
+                                <input type="number" style="   background: none; border: 3px solid #555; width: 100%;  border: none; border-bottom: 2px solid black;" name="price" id="price" placeholder="Enter the price for your pet"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="discription"></label>
+                                <input type="text" style="  background: none; width: 100%;  border: none; border-bottom: 2px solid black;" name="discription" id="discription" placeholder="Enter the discription of your pet"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button" >
+                                <input type="submit" style="width: 100%; background-color: #4CAF50;" name="signup" id="signup" class="form-submit" value="Post!"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        <footer>
+            <div class="container text-center">
+                <p>Copyright ©&nbsp;ASHU KUTTE KA BAACHA</p>
+            </div>
+        </footer>
+    <script src="{{url_for('static',filename='js/lib/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/lib/bootstrap.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{{url_for('static',filename='js/lib/grayscale.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/signup-main.js') }}"></script>
+ 
+</body>
+
