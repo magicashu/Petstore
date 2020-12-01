@@ -156,6 +156,10 @@ def logout():
     logout_user()
     return redirect(url_for('home'))
 
+@app.route("/cart")
+def cart():
+    return render_template('cart.html')
+
 @app.route('/accessories')
 def accessories(accessory_type=None, color=None):
     #todo getall data from db
