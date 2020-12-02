@@ -25,7 +25,7 @@
       id="mainNav"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="{{url_for('home')}}">
           <img
             src="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2FLOGO.jpg?v=1604399170653"
             alt=""
@@ -64,7 +64,7 @@
     </nav>
     <header
       class="masthead" 
-      style="background-image:url({{url_for('static',filename='img/')}});"
+      style="background-image:url({{url_for('static',filename='img/')}})";
     >
       <div class="intro-body">
         <div class="container">
@@ -80,9 +80,7 @@
         </div>
       </div>
     </header>
-    <h1>
-      <a href="form.html">Click here to view the form gandhi ma boi</a>
-    </h1>
+    
 
     <section id="about" class="content-section text-center">
       <div class="container">
@@ -143,7 +141,7 @@
                     src="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2Fdownload.jpg?v=1604397528662"
                   />
                 </a>
-                <a href="birds.html">
+                <a href="{{url_for('birds')}}">
                   <h1>Click here to see Birds</h1>
                 </a>
               </div>
@@ -267,7 +265,7 @@
     </div>
     <footer>
       <div class="container text-center">
-        <p>Copyright ©&nbsp;ASHU KUTTE KA BAACHA</p>
+        <p>Copyright ©&nbsp;ASHU's PETSTORE</p>
       </div>
     </footer>
     {% block content %}{% endblock %}   

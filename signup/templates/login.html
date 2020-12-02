@@ -1,54 +1,96 @@
 
 <head>
-  <!-- Font Icon -->
-  <link rel="stylesheet"  href="{{ url_for('static', filename='fonts/material-icon/css/material-design-iconic-font.min.css') }}">
-    
-
-  <!-- Main css -->
-  <link rel="stylesheet" href="{{url_for('static',filename='css/signup-style.css')}}">
-</head>
-<body>
-    <div class="main">
-    <section class="sign-in">
-        <div class="container">
-            <div class="signin-content">
-                <div class="signin-image">
-                    <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
-                    <a href="#" class="signup-image-link">Create an account</a>
-                </div>
-
-                <div class="signin-form">
-                    <h2 class="form-title">Sign in</h2>
-                    <form action="{{url_for('login')}}" method="POST" class="register-form" id="login-form">
-                        <div class="form-group">
-                            <label for="email"><i class="zmdi zmdi-email"></i></label>
-                            <input type="email" name="email" id="email" placeholder="Your Email"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                            <input type="password" name="pass" id="pass" placeholder="Password"/>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                            <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me!</label>
-                        </div>
-                        <div class="form-group form-button">
-                            <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
-                        </div>
-                    </form>
-                    <div class="social-login">
-                        <span class="social-label">Or login with</span>
-                        <ul class="socials">
-                            <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                            <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                            <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <!-- Font Icon -->
+    <link rel="stylesheet"  href="{{ url_for('static', filename='fonts/material-icon/css/material-design-iconic-font.min.css') }}">
+      
+  
+    <!-- Main css -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/signup-style.css')}}">
+  
+    <link rel="stylesheet" href="{{url_for('static',filename='css/lib/bootstrap.min.css')}}">
+  
+       <link rel="stylesheet" href="{{url_for('static',filename='css/dogs.css')}}">
+       <link rel="stylesheet" href="{{url_for('static',filename='css/untitled.css')}}">
+  </head>
+  <body>
+      <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top"
+      id="mainNav" style="background-color: black;" >
+      <div class="container" style="background-color: black;">
+        <a class="navbar-brand" href="{{url_for('home')}}">
+          <img
+            src="https://cdn.glitch.com/4ced1143-3502-4c03-ba11-083fcadb11c5%2FLOGO.jpg?v=1604399170653"
+            alt=""
+          />
+        </a>
+        <button
+          data-toggle="collapse"
+          class="navbar-toggler navbar-toggler-right"
+          data-target="#navbarResponsive"
+          type="button"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          value="Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item nav-link js-scroll-trigger">
+              <a class="nav-link active js-scroll-trigger" href="{{url_for('register')}}">Sign Up</a>
+            </li>
+          </ul>
         </div>
-    </section>
-</div>
-<script src="{{ url_for('static',filename='vendor/jquery/jquery.min.js') }}"></script>
-<script src="{{ url_for('static',filename='js/signup-main.js') }}"></script>
-</body>
+      </div>
+    </nav>
+  
+      <div class="main" style="background-color: black;">
+      <section class="sign-in">
+          <div class="container">
+              <div class="signin-content">
+                  <div class="signin-image">
+                      <figure><img src="static\img\signin-image.jpg" alt="sing up image"></figure>
+                      <a href="{{url_for('register')}}" class="signup-image-link"><b>Create an account</b></a>
+                  </div>
+  
+                  <div class="signin-form">
+                      <h2 class="form-title">Sign in</h2>
+                      <form action="{{url_for('login')}}" method="POST" class="register-form" id="login-form">
+                          <div class="form-group">
+                              <label for="email"><i class="zmdi zmdi-email"></i></label>
+                              <input type="email" name="email" id="email" placeholder="Your Email"/>
+                          </div>
+                          <div class="form-group">
+                              <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                              <input type="password" name="pass" id="pass" placeholder="Password"/>
+                          </div>
+                          <div class="form-group">
+                              <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                              <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me!</label>
+                          </div>
+                          <div class="form-group form-button">
+                              <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                          </div>
+                      </form>
+                      <div class="social-login">
+                          <span class="social-label">Or login with</span>
+                          <ul class="socials">
+                              <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                              <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                              <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+  <script src="{{ url_for('static',filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/signup-main.js') }}"></script>
+  </body>
+  <footer style="background-color: black;">
+      <div class="container text-center" style="background-color: black;">
+        <p>Copyright ©&nbsp;ASHU's PETSTORE</p>
+      </div>
+    </footer>
+  
