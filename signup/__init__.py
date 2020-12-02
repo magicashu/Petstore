@@ -12,7 +12,7 @@ from wtforms import Form
 
 app = Flask(__name__)
 
-app.config["MONGO_URI"] = "mongodb://localhost:27017/petstore"
+app.config["MONGO_URI"] ="mongodb+srv://storedata:1234@ashupetstore.5j6ra.mongodb.net/storedata?retryWrites=true&w=majority"
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_SSL'] = True
